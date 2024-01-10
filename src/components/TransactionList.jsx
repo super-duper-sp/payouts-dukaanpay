@@ -44,12 +44,11 @@ const TransactionList = () => {
     </div>
   </div>
 
-  <div className="flex items-center">
-    {/* <div className="cursor-pointer flex items-center border border-[#D9D9D9] p-1 rounded-md">
-      <span className="mr-2 pr-2 pl-1 pt-0">Sort</span> */}
+<div className='flex'>
+  <div className=" ml-4 cursor-pointer flex items-center">
+ 
       <img src='/sort.png' alt='Sort Icon' />
-    {/* </div> */}
-
+  </div>
     {/* Download Icon */}
     <div className="ml-4 cursor-pointer flex items-center">
       <img src='/download.png' alt='Download Icon' />
