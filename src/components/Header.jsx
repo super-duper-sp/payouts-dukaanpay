@@ -12,7 +12,7 @@ const Header = () => {
     >
       <div className="flex-1 shrink-0 flex flex-row items-center justify-start gap-[16px]">
         <div className="overflow-hidden flex flex-row items-center justify-start">
-          <div className="relative  font-xl">Payouts</div>
+          <div className="relative  text-2xl">Payouts</div>
         </div>
        
        <Howitswork/>
