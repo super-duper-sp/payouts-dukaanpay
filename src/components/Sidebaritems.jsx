@@ -66,17 +66,17 @@ const Sidebaritems = ({ onToggleComponent }) => {
   return (
     <div>
       {/* for Desktop */}
-      <div className="hidden md:block">
-        <div className="bg-colorgrey min-h-fit  w-50">
+      <div className=" block">
+        <div  >
           
 
-          <div className="mt-2 flex flex-col gap-1 relative">
+          <div className="mt-2 flex flex-col gap-1 justify-start relative">
             {menu?.map((menu, i) => (
               <Link
                 onClick={() => onToggleComponent(menu?.name)}
                 to={menu?.link}
                 key={i}
-                className={`flex items-center text-md gap-2.5 font-medium p-2 hover:bg-colorskin rounded-sm`}
+                className="flex flex-initial text-md gap-3 font-medium p-2 hover:bg-[#353C53] p-2 px-10 rounded-sm"
               >
                 <img
                   src={menu?.icon}

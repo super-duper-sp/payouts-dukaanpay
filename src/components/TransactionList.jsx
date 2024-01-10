@@ -34,7 +34,7 @@ const TransactionList = () => {
 <div className="p-4 rounded bg-[white] shadow-md">
 <div className="flex justify-between mb-4">
   {/* Search Bar */}
-  <div className="rounded bg-[#F2F2F2] flex items-center border border-[#D9D9D9] p-2 gap-2 rounded-md text-[#999999]   border-[#D9D9D9]">
+  <div className="rounded bg-[white] flex items-center border border-[#D9D9D9] p-2 gap-2 rounded-md text-[#999999]   border-[#D9D9D9]">
     <img
       className="w-3.5 h-3.5 object-cover"
       alt=""

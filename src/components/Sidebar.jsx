@@ -7,7 +7,7 @@ const Sidebar = () => {
   return (
     
 
-    <aside className="w-64 flex flex-col bg-[#1E2640] text-white p-4">
+    <aside className="w-45 flex flex-col bg-[#1E2640] text-white p-2">
    
    <div className="bg-secondary-navbar w-56 flex flex-col items-center justify-start py-4 px-2.5 box-border gap-[16px] text-left text-mini text-black-100 font-sub-title-medium flex-1">
     <div className="flex-1 flex flex-col items-center justify-start gap-[24px]">
@@ -35,11 +35,11 @@ const Sidebar = () => {
         />
       </div>
       </a>
-      <div className="flex-1 shrink-0 flex flex-col items-start justify-start gap-[4px]">
+  
         
         <Sidebaritems/>
 
-      </div>
+ 
     </div>
     <Walletcredits/>
   </div>
