@@ -1,6 +1,4 @@
-import React, { useState } from 'react';
-import { RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
-import { IoMdDownload } from 'react-icons/io';
+
 import Transactioncard from './Transactioncard';
 
 const TransactionList = () => {
