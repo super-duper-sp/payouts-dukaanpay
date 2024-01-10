@@ -1,124 +1,51 @@
-import React from "react";
-import { HiMenuAlt3 } from "react-icons/hi";
-import { FaNoteSticky } from "react-icons/fa6";
-import { IoAnalyticsSharp } from "react-icons/io5";
-import { IoSettings } from "react-icons/io5";
-import { BiSolidDashboard } from "react-icons/bi";
-import { CgDanger } from "react-icons/cg";
-import { GiBuyCard } from "react-icons/gi";
-import { RiArrowDropDownLine } from "react-icons/ri";
-import { GoHome } from "react-icons/go";
+import React from 'react'
+import Sidebaritems from './Sidebaritems'
+import Walletcredits from './Walletcredits'
+import Account from './Account';
 
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import Walletcredits from "./Walletcredits";
-
-const Sidebar = ({ onToggleComponent }) => {
-  const menu = [
-    { name: "Home", link: "/Home", icon: "/Navbar/home.png" },
-
-    {
-      name: "Orders",
-      link: "/Orders",
-      icon: "/Navbar/orders.png" /* Your icon component for navbaricon_Two */,
-    },
-    {
-      name: "Products",
-      link: "/Products",
-      icon: "/Navbar/products.png" /* Your icon component for navbaricon_Three */,
-    },
-    {
-      name: "Delivery",
-      link: "/Delivery",
-      icon: "/Navbar/deliverly.png" /* Your icon component for user */,
-    },
-    {
-      name: "Marketing",
-      link: "/Marketing",
-      icon: "/Navbar/marketing.png" /* Your icon component for Marketing */,
-    },
-
-    {
-      name: "Analytics",
-      link: "/Analytics",
-      icon: "/Navbar/analytics.png" /* Your icon component for navbaricon_Four */,
-    },
-    {
-      name: "Payouts",
-      link: "/Payouts",
-      icon: "/Navbar/payouts.png" /* Your icon component for navbaricon_Five */,
-    },
-    {
-      name: "Discounts",
-      link: "/Discounts",
-      icon: "/Navbar/discounts.png" /* Your icon component for navbaricon_Seven */,
-    },
-    {
-      name: "Audience",
-      link: "/Audience",
-      icon: "/Navbar/audience.png" /* Your icon component for navbaricon_Eight */,
-    },
-    {
-      name: "Appearance",
-      link: "/Appearance",
-      icon: "/Navbar/apperence.png" /* Your icon component for navbaricon_Nine */,
-    },
-    {
-      name: "Plugins",
-      link: "/Plugins",
-      icon: "/Navbar/plugins.png" /* Your icon component for Plugins */,
-    },
-  ];
-
-  const [open, setOpen] = useState(true);
-
+const Sidebar = () => {
   return (
-    <aside className="w-64 bg-gray-800 text-white">
-      {/* for Desktop */}
-      <div className="hidden md:block">
-        <div
-          className={`bg-colorgrey min-h-fit ${
-            open ? "w-50" : "w-20"
-          } duration-500 text-grey-100 px-4 py-4 rounded-xl shadow`}
-        >
-          <div className="py-3 flex justify-end">
-            <RiArrowDropDownLine
-              className="cursor-pointer"
-              onClick={() => setOpen(!open)}
-            />
-          </div>
-
-          <div className="mt-2 flex flex-col gap-1 relative">
-            {menu?.map((menu, i) => (
-              <Link
-                onClick={() => onToggleComponent(menu?.name)}
-                to={menu?.link}
-                key={i}
-                className={`flex items-center text-md gap-2.5 font-medium p-2 hover:bg-colorskin rounded-sm`}
-              >
-                <img
-                  src={menu?.icon}
-                  alt={menu?.name}
-                  style={{ width: "20px", height: "20px" }}
-                />
-                <h2
-                  className={`whitespace-pre duration-500 text-sm ${
-                    !open && "opacity-0 translate-x-28 overflow-hidden"
-                  }`}
-                >
-                  {menu?.name}
-                </h2>
-              </Link>
-            ))}
-          </div>
-
     
 
-        </div>
-      </div>
-      <Walletcredits/>
-    </aside>
-  );
-};
+    <aside className="w-64 flex flex-col bg-[#1E2640] text-white p-4">
+   
+   <div className="bg-secondary-navbar w-56 flex flex-col items-center justify-start py-4 px-2.5 box-border gap-[16px] text-left text-mini text-black-100 font-sub-title-medium flex-1">
+    <div className="flex-1 flex flex-col items-center justify-start gap-[24px]">
+      <a href="">
+      <div className="w-48 shrink-0 flex flex-row items-center justify-start relative gap-[12px]">
 
-export default Sidebar;
+        <div className="relative rounded bg-black-100 w-10 h-10 z-[0]" />
+        <div className="flex-1 flex flex-col items-start justify-center gap-[4px] z-[1]">
+          <div className="text-white no-underline self-stretch relative leading-[22px] font-medium">
+            Nishyan
+          </div>
+          <div className="text-white self-stretch relative text-smi [text-decoration:underline] leading-[16px] font-body-2-medium opacity-[0.8]">
+            Visit store
+          </div>
+        </div>
+        <img
+          className="absolute my-0 mx-[!important] top-[0.5px] left-[0.5px] rounded w-[39px] h-[39px] object-cover z-[2]"
+          alt=""
+          src="/Navbar/nishyan.png"
+        />
+        <img
+          className="relative w-5 h-5 overflow-hidden shrink-0 object-cover z-[3]"
+          alt=""
+          src="/arrowdownwhite.png"
+        />
+      </div>
+      </a>
+      <div className="flex-1 shrink-0 flex flex-col items-start justify-start gap-[4px]">
+        
+        <Sidebaritems/>
+
+      </div>
+    </div>
+    <Walletcredits/>
+  </div>
+  </aside>
+
+  );
+}
+
+export default Sidebar

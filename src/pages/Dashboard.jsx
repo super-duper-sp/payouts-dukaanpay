@@ -14,7 +14,7 @@ const Dashboard = () => {
         {/* Header */}
     <Header/>
         {/* Main Content */}
-        <main className="flex-1 overflow-x-hidden overflow-y-scroll bg-gray-200 p-4">
+        <main className="flex-1 overflow-x-hidden overflow-y-scroll bg-[white] p-4">
          
          <Payouts/>
 

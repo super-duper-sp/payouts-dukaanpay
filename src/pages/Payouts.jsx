@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../components/Header';
 import { useState } from 'react';
 import Overview from '../components/Overview';
+import TransactionList from '../components/TransactionList';
 
 const Payouts = () => {
 
@@ -17,9 +18,14 @@ const Payouts = () => {
 
   return (
 
-    <div>
-        <Overview/>
-    </div>
+
+<div className='bg-[white]'>
+<Overview/>
+
+
+<TransactionList/>
+
+</div>
 );
 };
 

@@ -1,36 +1,32 @@
 // components/Header.js
-import React from 'react';
-import { FaQuestion, FaSearch, FaBars } from 'react-icons/fa';
+import React from "react";
+import { FaQuestion, FaSearch, FaBars } from "react-icons/fa";
+import Searchbar from "./Searchbar";
+import Howitswork from "./Howitswork";
 
 const Header = () => {
   return (
-<div className="dashboardHeaderContainer">
-  <div className="flex items-center justify-between bg-gray-700 text-white p-4">
-    <div className="flex items-center">
-      <div className="text-2xl font-bold">Payments</div>
-      <div className="flex items-center ml-4">
-        <FaQuestion size={20} className="mr-2" />
-        <div className="text-sm">How it works</div>
-      </div>
-    </div>
-
-    <div className="flex items-center">
-      <FaSearch size={20} className="mr-2" />
-      <div className="text-sm">Search features, tutorials, etc.</div>
-    </div>
-
-    <div className="flex items-center">
-      <div className="flex items-center">
-        <div className="w-8 h-8 bg-gray-300 rounded-full">
-          {/* Add Ellipse styling */}
+    <div
+      className="bg-[white] box-border w-full flex flex-row items-center justify-start py-3 px-8 gap-[16px] text-left text-xl text-black-12 font-body-2-medium border-b-[1px] border-solid border-black-85"
+     
+    >
+      <div className="flex-1 shrink-0 flex flex-row items-center justify-start gap-[16px]">
+        <div className="overflow-hidden flex flex-row items-center justify-start">
+          <div className="relative leading-[28px] font-medium">Payouts</div>
         </div>
-        <FaBars size={20} className="ml-2" />
-      </div>
-      <FaBars size={20} className="ml-4" />
-    </div>
-  </div>
-</div>
+       
+       <Howitswork/>
 
+      </div>
+      <div className="rounded-md bg-black-95 w-[400px] flex flex-row items-center justify-start py-[9px] px-4 box-border gap-[8px] text-mini text-[#808080]">
+        <Searchbar/>
+      </div>
+      <div className="flex-1 shrink-0 flex flex-row items-start justify-end gap-3">
+       <img src="/icon2header.png"/>
+       <img src="/icon1header.png"/>
+
+      </div>
+    </div>
   );
 };
 

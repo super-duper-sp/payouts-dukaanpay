@@ -5,7 +5,7 @@ const Walletcredits = () => {
     <div className="rounded bg-[#353C53] w-48 flex flex-col items-start justify-start py-1.5 px-3 box-border text-left text-smi text-black-100 font-sub-title-medium">
       <div className="flex flex-row items-center justify-start gap-[12px]">
         <div className="rounded bg-gray shrink-0 flex flex-row items-start justify-start p-1.5">
-          <img
+        <img
             className="relative w-6 h-6 overflow-hidden shrink-0 object-cover"
             alt=""
             src="/Navbar/credits.png"
