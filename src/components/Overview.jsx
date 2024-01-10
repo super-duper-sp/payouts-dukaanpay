@@ -7,7 +7,7 @@ const Overview = () => {
         <div className="relative leading-[28px] font-medium">Overview</div>
         <div className="shrink-0 flex flex-row items-center justify-start text-base text-black-30">
           <div className="relative w-[137px] h-9">
-            <div className="absolute top-[0px] left-[0px] rounded bg-[white] box-border w-[137px] h-9 border-[1px] border-solid border-black-85" />
+            <div className="absolute top-[0px] left-[0px] rounded bg-[white] shadow-md  box-border w-[137px] h-9 border-[1px] border-solid border-black-85" />
             <a href="">
             <div className="absolute top-[6px] left-[14px] leading-[24px]">
               This Month
@@ -68,7 +68,7 @@ const Overview = () => {
           </div>
         </div>
         <div className="flex-1 shrink-0 flex flex-row items-center  justify-center">
-          <div className="flex-1 rounded bg-[white] shadow-[0px_2px_6px_rgba(26,_24,_30,_0.04)] flex flex-col items-start justify-start p-5">
+          <div className="flex-1 rounded shadow-md bg-[white] shadow-[0px_2px_6px_rgba(26,_24,_30,_0.04)] flex flex-col items-start justify-start p-5">
             <div className="self-stretch flex flex-col items-start justify-start gap-[16px]">
               <div className="flex text-[#4D4D4D] flex-row items-center justify-start gap-[8px]">
                 <div className="relative leading-[24px]">Amount Pending</div>
@@ -95,14 +95,14 @@ const Overview = () => {
                     alt=""
                     src="/arrowrightblue.png"
                   />
-                  
+
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className="flex-1 shrink-0 flex flex-row items-center justify-center">
-          <div className="flex-1 rounded bg-[white] shadow-[0px_2px_6px_rgba(26,_24,_30,_0.04)] flex flex-col items-start justify-start p-5">
+          <div className="flex-1 rounded shadow-md bg-[white] shadow-[0px_2px_6px_rgba(26,_24,_30,_0.04)] flex flex-col items-start justify-start p-5">
             <div className="self-stretch flex flex-col items-start justify-start gap-[16px]">
               <div className="flex text-[#4D4D4D] flex-row items-center justify-start gap-[8px]">
                 <div className="relative leading-[24px]">Amount Processed</div>

@@ -19,11 +19,15 @@ const Payouts = () => {
   return (
 
 
-<div className='bg-[white]'>
+<div className='bg-[white] p-4'>
 <Overview/>
 
 
-<TransactionList/>
+<div >
+  <TransactionList />
+</div>
+
+
 
 </div>
 );

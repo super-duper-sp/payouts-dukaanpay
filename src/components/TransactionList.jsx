@@ -24,35 +24,41 @@ const TransactionList = () => {
   return (
 
    <div>
-     <Transactioncard/>
+   <div className='mb-4'>
+   <Transactioncard/>
+   </div>
 
 
 
 {/* Transaction Details Table */}
-<div className="mt-8 overflow-x-auto">
-  <div className="flex justify-between mb-4">
-    {/* Search Bar */}
-    <input
-  type="text"
-  placeholder="Order ID or transaction ID"
-  className="px-4 py-2 border border-gray-700 rounded-md text-lg::placeholder"
-/>
+<div className="p-4 rounded bg-[white] shadow-md">
+<div className="flex justify-between mb-4">
+  {/* Search Bar */}
+  <div className="rounded bg-[#F2F2F2] flex items-center border border-[#D9D9D9] p-2 gap-2 rounded-md text-[#999999]   border-[#D9D9D9]">
+    <img
+      className="w-3.5 h-3.5 object-cover"
+      alt=""
+      src="/search.png"
+    />
 
+    <div className="flex-1 leading-[20px]">
+      Order ID or transaction ID
+    </div>
+  </div>
 
-<div className="flex items-center">
-<div className="cursor-pointer flex items-center border border-[#D9D9D9] p-1 rounded-md">
-  <span className="mr-2 pr-2">Sort</span>
-  <img src='/sort.png' alt='Sort Icon' />
-</div>
+  <div className="flex items-center">
+    <div className="cursor-pointer flex items-center border border-[#D9D9D9] p-1 rounded-md">
+      <span className="mr-2 pr-2">Sort</span>
+      <img src='/sort.png' alt='Sort Icon' />
+    </div>
 
-
-  {/* Download Icon */}
-  <div className="ml-4 cursor-pointer flex items-center">
-    
-    <img src='/download.png' alt='Download Icon'/>
+    {/* Download Icon */}
+    <div className="ml-4 cursor-pointer flex items-center">
+      <img src='/download.png' alt='Download Icon' />
+    </div>
   </div>
 </div>
-  </div>
+
 
   {/* Transaction Table */}
 
